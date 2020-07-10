@@ -1,0 +1,28 @@
+/**index.wxss**/
+/** 设置yuanquan图片位置*/
+.conherd{
+  margin:0 auto;
+}
+.hengdi_t{
+ position: absolute;
+}
+.bzt_ms{
+  height: 160px;
+}
+.image-yq{
+  position: relative;
+   text-align: center;
+   margin-top: 56%;
+  
+}
+.image-yq image{
+  position: relative;
+ max-width: 130px;
+ max-height: 125px;
+}
+.image-yq-text{
+  position: relative;
+
+  margin-top: -22%;
+  
+}

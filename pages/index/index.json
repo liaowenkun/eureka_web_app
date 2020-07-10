@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+
+      "i-input": "../../dist/input/index",
+      "i-steps": "../../dist/steps/index",
+      "i-step": "../../dist/step/index",
+      "i-icon": "../../dist/icon/index"
+      
+
+  },"enablePullDownRefresh": true  
+}

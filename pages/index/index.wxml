@@ -1,0 +1,73 @@
+<!--index.wxml-->
+
+<view class="conherd">
+    <view>
+      <text>姓名：</text>
+        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+         <block wx:else>
+
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+    </view>
+  <view  class="hengdi_t">
+          <i-steps current="{{verticalCurrent}}" direction="vertical">
+          <i-step i-class="bzt_ms">
+              <view slot="title" >
+                    上班时间09:30
+              </view>
+              <view slot="content" >
+                  打卡时间{{dksj}}          
+              </view>
+                <view slot="content">
+                <i-icon type="coordinates" size="15" color="#80848f" />  北京路   {{sjs}}    
+              </view>
+          </i-step>
+            <i-step i-class="bzt_ms">
+              <view slot="title" >
+                    上班时间09:30
+              </view>
+              <view slot="content" >
+                  这里是该步骤的             
+              </view>
+                <view slot="content">
+                  这里是该步骤的             
+              </view>
+          </i-step>
+           <i-step i-class="bzt_ms">
+              <view slot="title" >
+                    上班时间09:30
+              </view>
+              <view slot="content" >
+                  打卡时间{{dksj}}          
+              </view>
+                <view slot="content">
+                <i-icon type="coordinates" size="15" color="#80848f" />  北京路   {{sjs}}    
+              </view>
+          </i-step>
+            <i-step i-class="bzt_ms">
+              <view slot="title" >
+                    上班时间09:30
+              </view>
+              <view slot="content" >
+                  这里是该步骤的             
+              </view>
+                <view slot="content">
+                  这里是该步骤的             
+              </view>
+          </i-step>
+             
+      </i-steps>
+
+  </view>
+      <view>
+            <view class="image-yq" bindtap="shouquan">
+               <view class="image-yq-image" >
+              <image src="../image/yaunquan.png" ></image>
+              </view>
+              <view class="image-yq-text"> 
+                 <text>{{date}}</text>
+              </view>
+             
+            </view>
+          </view>
+</view>
